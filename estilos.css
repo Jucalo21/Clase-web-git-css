@@ -1,7 +1,50 @@
-.cuadrado{
-    background-color: steelblue;
-    color: white;
-    height: 50px;  
-    width: 60px;
-    border: 2px solid black;
+/* Selectores de Tipo */
+/*Especificidad de selectores de tipos es: 1*/
+body{
+    background-color: lightblue;
 }
+
+li{
+    background-color: blueviolet;
+}
+
+/*Selector de clase*/
+/*Especificidad de selectores de tipos es: 10*/
+.peliculas{
+    background-color: yellow;
+}
+
+.series{
+    background-color: blue;
+}
+
+.pelicula{
+    background-color: green;
+}
+
+/*Selector de ID*/
+/*Especificidad de selectores de tipos es: 100*/
+#senorDeLosAnillos{
+    background-color: grey;
+}
+
+#suits{
+    background-color: gold;
+}
+
+/*Especificidad y cascada*/
+#basket{
+    background-color: brown;/*100*/
+}
+
+.juego{
+    background-color: pink;/*10*/
+}
+
+li{
+    background-color: greenyellow;/*1*/
+}
+
+/*
+1.Especificidad
+2.Cascadas*/
