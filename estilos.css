@@ -1,50 +1,71 @@
-/* Selectores de Tipo */
-/*Especificidad de selectores de tipos es: 1*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: lightblue;
+    font-family: Arial;
+    background-color: orange;
 }
 
-li{
-    background-color: blueviolet;
+.card{
+    width: 330px;
+    height: 400px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 70px;
+    border-radius: 15px;
+    background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+    background-repeat: no-repeat;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.24);
+    background-size: 100% 150px;
+    text-align: center;
+    padding: .1px;
 }
 
-/*Selector de clase*/
-/*Especificidad de selectores de tipos es: 10*/
-.peliculas{
-    background-color: yellow;
+.card__person{
+    background-image: url('./foto.png');
+    background-size: cover;
+    background-position:center;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    margin-top: 105px;
+    border-radius: 50%;
+    border: 7px solid #fff;
 }
 
-.series{
-    background-color: blue;
+.card__name{
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-.pelicula{
-    background-color: green;
+.card__media{
+    margin-top: 40px;
+    width: 100%;
+    height: 90px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
 }
 
-/*Selector de ID*/
-/*Especificidad de selectores de tipos es: 100*/
-#senorDeLosAnillos{
-    background-color: grey;
+.card__icon{
+    width: 25%;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
 }
 
-#suits{
-    background-color: gold;
+.card__icon--linkedIn{
+    background-image: url('./linkedin.png');
 }
 
-/*Especificidad y cascada*/
-#basket{
-    background-color: brown;/*100*/
+.card__icon--instagram{
+    background-image: url('./instagram.png');
 }
 
-.juego{
-    background-color: pink;/*10*/
+.card__icon--twitter{
+    background-image: url('./twitter.png');
 }
-
-li{
-    background-color: greenyellow;/*1*/
-}
-
-/*
-1.Especificidad
-2.Cascadas*/
